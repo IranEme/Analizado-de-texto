@@ -1,0 +1,5 @@
+altair
+pandas==2.2.2
+plotly
+protobuf
+streamlit==1.38.0
