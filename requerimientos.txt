@@ -5,3 +5,4 @@ protobuf
 streamlit==1.38.0
 thefuzz
 python-Levenshtein
+wheel

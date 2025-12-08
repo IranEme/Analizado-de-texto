@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: smart-art-analyzer
+    env: python
+    plan: free
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requerimientos.txt
+      python3 create_artes_db.py
+    startCommand: streamlit run buscale.py --server.port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: STREAMLIT_SERVER_PORT
+        value: 8501
